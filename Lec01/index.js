@@ -42,3 +42,21 @@ if(flag){
     console.log("hi")
 }
 // falsy value h toh nhi chalegaaaa 
+
+
+let str1=1
+let str2= '1'
+console.log(str1===str2)
+// triple === strict equal checking
+// double wala bol dega true aur code fatt jaayega
+
+
+console.log('3'+ 3)
+console.log(3+ '3')
+console.log('3'+ '3')
+console.log(3+ 3)
+
+console.log('3'-'3')
+console.log(3-3)
+console.log('3'-3
+)
