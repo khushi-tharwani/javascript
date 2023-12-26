@@ -106,7 +106,7 @@ console.log(n)
 
 
 
-
+    
   let count = 0
   while (count <= n) {
     for (let num = 2; count<= n; num++) { 
