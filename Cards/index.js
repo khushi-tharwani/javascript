@@ -99,6 +99,15 @@ para4.textContent += element.name
 let hr = document.createElement('hr')
 document.body.append(para1, para2, para3 , para4, hr)
  });
-    
 
-    
+renderData(productData)
+ let ip = document.querySelector('.input-element') 
+console.log(ip)
+ip.addEventListener('change',()=>{
+    console.log(ip.value)
+    let filteredData = productData.filter((element)=>element.name.includes(ip.value))
+    console.log(filteredData)
+    renderData(filteredData)
+
+
+})
