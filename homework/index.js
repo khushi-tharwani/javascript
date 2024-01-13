@@ -7,9 +7,13 @@ document.getElementById("sortButton").addEventListener("click", function() {
     numbers.push(inputValue);
 
 
-    for (let i = 0; i < numbers.length; i++) {
-        for (let j = i + 1; j < numbers.length; j++) {
-            if (numbers[i] > numbers[j]) {
+
+    for (let i = 0; i < numbers.length; i++) 
+    {
+        for (let j = i + 1; j < numbers.length; j++) 
+        {
+            if (numbers[i] > numbers[j])
+             {
             
                 let temp = numbers[i];
                 numbers[i] = numbers[j];
@@ -17,8 +21,15 @@ document.getElementById("sortButton").addEventListener("click", function() {
             }
         }
     }
+    // +ve swap krna h
+    // -ve swap krna h
+    // 0 return jab dono equal hai
+    // numbers.sort((a,b)=>a-b)
 
+    
 
     let resultElement = document.getElementById("sortedResult");
     resultElement.textContent = `Sorted Numbers: ${numbers.join(', ')}`;
+
+    
 });
